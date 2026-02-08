@@ -20,13 +20,20 @@
     <picture>
     <!-- change the picture size and resolution in max-width -->
      <source srcset="./images/museum-landscape-960x.jpg,
-     ./images/museum-landscape-720x.jpg 2x,
-     ./images/museum-landscape-480.jpg 3x"
+     ./images/museum-landscape-720x.jpg 3.125x,
+     ./images/museum-landscape-480.jpg 2x,
+     ./images/museum-landscape-320.jpg 1x"
     media="(max-width: 960px)" />
+
+    <source srcset="./images/museum-square-960x.jpg,
+    ./images/museum-square-1280x.jpg 1x,
+    ."
+    
+    media="(min-width: 960px)">
     
     
-     <img class="original-image" src="images/museum.jpg" 
-    alt="image of a museum with different paintings and a sitting area">
+     <img id="museum" class="original-image" src="images/museum-landscape-960x.jpg" 
+    alt="a museum with different paintings and a sitting area">
     </picture>
 
   </header>
