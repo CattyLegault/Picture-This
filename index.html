@@ -1,42 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Picture This!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- main content -->
+    <header class="header">
+      <div class="title">
+        <h1>Picture This!</h1>
+        <h4>My Really Cool Blog Post</h4>
+      </div>
+      <!-- adding picture tag -->
+      <picture>
+        <!-- change the picture size and resolution in min-width -->
+        <source media="(min-width: 960px)" 
+          srcset="./images/museum-square-960x960.jpg 960w,
+                  ./images/museum-square-1280x1280.jpg 1280w 2x,
+                  ./images/museum-square-1600x1600.jpg 1600w 3x"/>
+        <!-- change the picture size and resolution in max-width -->
+        <source media="(max-width: 959px)" 
+          srcset="
+            ./images/museum-landscape-320x.jpg 320w,
+            ./images/museum-landscape-480x.jpg 480w 1x,
+            ./images/museum-landscape-720x.jpg 720w 2x,
+            ./images/museum-landscape-960x.jpg 960w 3x"/>
 
-<body>
-  <!-- main content -->
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
-    <!-- adding picture tag -->
-    <picture>
-    <!-- change the picture size and resolution in max-width -->
-     <source srcset="./images/museum-landscape-960x.jpg,
-     ./images/museum-landscape-720x.jpg 3.125x,
-     ./images/museum-landscape-480.jpg 2x,
-     ./images/museum-landscape-320.jpg 1x"
-    media="(max-width: 960px)" />
-
-    <source srcset="./images/museum-square-960x.jpg,
-    ./images/museum-square-1280x.jpg 1x,
-    ."
-    
-    media="(min-width: 960px)">
-    
-    
-     <img id="museum" class="original-image" src="images/museum-landscape-960x.jpg" 
-    alt="a museum with different paintings and a sitting area">
-    </picture>
-
-  </header>
-</body>
-
+        <!-- fallback -->
+        <img
+          id="museum"
+          class="original-image"
+          src="images/museum.jpg"
+          alt="a museum with different paintings and a sitting area to view the paintings"
+        />
+      </picture>
+    </header>
+  </body>
 </html>

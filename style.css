@@ -34,6 +34,8 @@ img {
   display: block;
 }
 
+/* media query */
+
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
