@@ -18,25 +18,24 @@
       <!-- adding picture tag -->
       <picture>
         <!-- change the picture size and resolution in min-width -->
-        <source media="(min-width: 960px)" 
+        <source media="(min-width: 961px)" 
           srcset="./images/museum-square-960x960.jpg 960w,
                   ./images/museum-square-1280x1280.jpg 1280w 2x,
                   ./images/museum-square-1600x1600.jpg 1600w 3x"/>
         <!-- change the picture size and resolution in max-width -->
-        <source media="(max-width: 959px)" 
+        <source media="(max-width: 960px)" 
           srcset="
-            ./images/museum-landscape-320x.jpg 320w,
-            ./images/museum-landscape-480x.jpg 480w 1x,
-            ./images/museum-landscape-720x.jpg 720w 2x,
-            ./images/museum-landscape-960x.jpg 960w 3x"/>
+            ./images/museum-landscape-320.jpg 320w,
+            ./images/museum-landscape-480.jpg 480w 1x,
+            ./images/museum-landscape-720.jpg 720w 2x,
+            ./images/museum-landscape-960.jpg 960w 3x"/>
 
         <!-- fallback -->
         <img
           id="museum"
           class="original-image"
-          src="images/museum.jpg"
-          alt="a museum with different paintings and a sitting area to view the paintings"
-        />
+          src="./images/museum-landscape-960.jpg"
+          alt="a museum with different paintings and a sitting area to view the paintings"/>
       </picture>
     </header>
   </body>
