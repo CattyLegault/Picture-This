@@ -20,17 +20,26 @@
         <!-- change the picture size and resolution in min-width -->
         
         
+        <source srcset="./images/museum-landscape-960.jpg,
+                    ./images/museum-landscape-1440x.jpg 2x,
+                    ./images/museum-landscape-2160x.jpg 3x"
+        media="(max-width: 720px)" />
+
+        <source srcset="./images/museum-landscape-720.jpg,
+                    ./images/museum-landscape-960.jpg 2x,
+                    ./images/museum-landscape-1440.jpg 3x"
+        media="(min-width: 480px)" />
         
-        
-         <source srcset="./images/museum-landscape-320.jpg,
-                    ./images/museum-landscape-480.jpg 1.5x,
-                    ./images/museum-landscape-720.jpg 2x
-                    ./images/museum-landscape-960.jpg 3x,"
+         <source srcset="./images/museum-landscape-480.jpg,
+                    ./images/museum-landscape-720.jpg 1x,
+                    ./images/museum-landscape-960.jpg 2x,
+                    ./images/museum-landscape-1440x.jpg 3x,"
         media="(min-width: 320px)" />
         
         <source srcset="./images/museum-landscape-320.jpg,
                     ./images/museum-landscape-480.jpg 1.5x,
-                    ./images/museum-landscape-720.jpg 2x"
+                    ./images/museum-landscape-720.jpg 2x,
+                    ./images/museum-landscape-960.jpg 3x"
         media="(min-width: 319px)" />
 
         <!-- fallback -->
