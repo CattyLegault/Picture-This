@@ -18,33 +18,34 @@
       <!-- adding picture tag -->
       <picture>
         <!-- change the picture size and resolution in min-width -->
-          <source srcset="./images/museum-square-1280x1280.jpg,
-                    ./images/museum-square-1600x1600.jpg 2x,
-                    ./images/museum-square-1920x1920.jpg 3x"
-            media="(min-width: 960px)" />
 
-         <source srcset="./images/museum-square-960x960.jpg,
+        <source srcset="./images/museum-square-960x960.jpg,
                     ./images/museum-square-1280x1280.jpg 1x,
                     ./images/museum-square-1600x1600.jpg 2x"
-            media="(min-width: 720px)" />
+            media="(min-width: 960px)" />
+
+        <source srcset="./images/museum-landscape-960.jpg,
+                    ./images/museum-landscape-1920.jpg 1x,
+                    ./images/museum-landscape-2160.jpg 1.5x"
+            media="(max-width: 720px)" />
 
         <source srcset="./images/museum-landscape-720.jpg,
-                    ./images/museum-landscape-960.jpg 1.5x,
-                    ./images/museum-landscape-1920.jpg 2x"
-            media="(max-width: 640px)" />
+                    ./images/museum-landscape-960.jpg,
+                    ./images/museum-landscape-1440.jpg"
+            media="(min-width: 640x)" />
 
         <source srcset="./images/museum-landscape-640.jpg,
-                    ./images/museum-landscape-720.jpg 1x,
-                    ./images/museum-landscape-960.jpg 2x"
+                    ./images/museum-landscape-720.jpg,
+                    ./images/museum-landscape-960.jpg"
             media="(min-width: 480px)" />
 
         <source srcset="./images/museum-landscape-480.jpg,
                     ./images/museum-landscape-640.jpg,
-                    ./images/museum-landscape-960.jpg"
+                    ./images/museum-landscape-720.jpg"
             media="(min-width: 320px)" />
 
-    <source srcset="./images/museum-landscape-320.jpg"
-            media="(max-width: 319px)" />
+        <source srcset="./images/museum-landscape-320.jpg"
+            media="(min-width: 319px)" />
         
         <!-- fallback -->
         <img
