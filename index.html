@@ -19,41 +19,45 @@
       <picture>
         <!-- change the picture size and resolution in min-width -->
 
+        <source srcset="./images/museum-square-800x800.jpg,
+                    ./images/museum-square-1600x1600.jpg 2x,
+                    ./images/museum-square-2400x2400.jpg 3x"
+            media="(min-width: 1600px)" />
+
         <source srcset="./images/museum-square-640x640.jpg,
                     ./images/museum-square-960x960.jpg 2x,
                     ./images/museum-square-1440x1440.jpg 3x"
-            media="(min-width: 1280x)" />
+            media="(min-width: 1280px)" />
 
         <source srcset="./images/museum-square-480x480.jpg,
-                    ./images/museum-square-960x960.jpg 2x,
-                    ./images/museum-square-1440x1440.jpg 3x"
-            media="(min-width: 960x)" />
+                    ./images/museum-square-960x960.jpg 1x,
+                    ./images/museum-square-1440x1440.jpg 2x"
+            media="(min-width: 961px)" />
         
-        <source srcset="./images/museum-landscape-960.jpg,
-                    ./images/museum-landscape-1920.jpg 1.5x,
-                    ./images/museum-landscape-2160.jpg 2x"
-            media="(max-width: 959x)" />
+        <source srcset="./images/museum-landscape-1920.jpg,,
+                    ./images/museum-landscape-2880.jpg 3x"
+            media="(min-width: 960px)" />
 
-        <source srcset="./images/museum-landscape-720.jpg,
+        <source srcset="./images/museum-landscape-960.jpg,
                     ./images/museum-landscape-1440.jpg 2x,
                     ./images/museum-landscape-2160.jpg 3x"
-            media="(min-width: 719px)" />
+            media="(min-width: 720px)" />
+
+        <source srcset="./images/museum-landscape-640.jpg,
+                        ./images/museum-landscape-960.jpg 1.5x,
+                        ./images/museum-landscape.1440.jpg 2x,"
+            media="(max-width: 480px)" />
 
         <source srcset="./images/museum-landscape-480.jpg,
-                        ./images/museum-landscape-960.jpg 2x,
-                        ./images/museum-landscape-1440.jpg 3x,"
-            media="(min-width: 479px)" />
-
-        <source srcset="./images/museum-landscape-320.jpg,
-                        ./images/museum-landscape-640.jpg 1x,
+                        ./images/museum-landscape-640.jpg 1.5x,
                         ./images/museum-landscape-960.jpg 2x"
-            media="(min-width: 319px)" />
+            media="(min-width: 320px)" />
         
         <!-- fallback -->
         <img
           id="museum"
           class="original-image"
-          src="./images/museum.jpg"
+          src="./images/museum-landscape-320.jpg"
           alt="a museum with different paintings and a sitting area to view the paintings"/>
       </picture>
     </header>
